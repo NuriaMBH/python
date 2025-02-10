@@ -5,4 +5,4 @@ numero1 = int(input())
 print("introduzca numero 2")
 numero2= int(input():
 if (numero1> numero2):
-      print("el numero "+ str(numero1)
+      print("el numero "+ str(numero1))
