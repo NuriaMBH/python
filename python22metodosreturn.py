@@ -1,3 +1,11 @@
+# Los métodos podemos dividirlos entre dos grupos:
+
+# Métodos de acción: Ejecutan una serie de acciones
+# Métodos return: Ejecutan una serie de acciones y devuelven un valor después de ejecutarlas
+
+# Acción: input()
+# Return: len()
+
 def convertirMayusculas(texto):
     return texto.uppper()
 

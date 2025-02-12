@@ -1,3 +1,6 @@
+#Vamos a realizar una aplicación en la que pediremos al usuario un número inicial 
+# y un número final y mostraremos los números pares que existan entre los dos.
+
 print("rango de numeros pares")
 print("introduzca un inicio")
 inicio= int(input())

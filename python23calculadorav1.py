@@ -1,14 +1,7 @@
-# Creamos un nuevo programa python23calculadora.py
+#Si el usuario no introduce números(inicio)volver a pedirle números hasta que nos de dos números
+#Necesitamos una opción mas para que el usuario pueda introducir números de nuevo si lo desea
 
-# Pediremos al usuario dos números
-# Debemos mostrar un menú con estas operaciones:
 
-# 1.- Sumar
-# 2.- Restar
-# 3.- Multiplicar
-
-# Tendremos tres funciones/métodos return para cada una de las opciones y mostraremos el resultado de lo que el usuario ha seleccionado
-# DECLARACION METODOS
 def sumarNumeros(num1, num2):
     return num1 + num2
 
@@ -25,12 +18,21 @@ def mostrarMenu():
     print("3.- Multiplicar")
     print("Seleccione una opción")
 
+def getNumeroComprobado():
+    print("Introduzca numero")
+    # ALMACENAR LO QUE HA ESCRITO EL USUARIO
+    # EN UNA VARIABLE STRING
+    aux = input()
+    while (aux.isdigit() == False):
+        print("Esto no es un numero")
+        print("Introduzca numero")
+        aux = input()           
+    num = int(aux)
+    return num
 #--------------------------------
 print("Calculadora metodos")
-print("Introduzca numero 1")
-numero1 = int(input())
-print("Introduzca numero 2")
-numero2 = int(input())
+numero1 = getNumeroComprobado()
+numero2 = getNumeroComprobado()
 # ASIGNAMOS UN VALOR A OPCION PARA ENTRAR EN EL BUCLE
 opcion = 1
 # CREAMOS UN WHILE HASTA QUE EL USUARIO ESCRIBA 0
@@ -44,6 +46,12 @@ while (opcion != 0):
         operacion = restarNumeros(numero1, numero2)
     elif (opcion == 3):
         operacion = multiplicarNumeros(numero1, numero2)
+    elif (opcion == 4):
+        # DEBEMOS PEDIR NUMEROS
+        numero1 = getNumeroComprobado()
+        numero2 = getNumeroComprobado()
+    elif (opcion == 0):
+        print("Hasta luego")
     else:
         print("No ha seleccionado una opción correcta")
     print("Operación " + str(operacion))
