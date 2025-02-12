@@ -1,3 +1,9 @@
+# Pediremos al usuario un texto numérico
+# “1234”
+
+# Debemos sumar cada carácter del texto y mostrar la suma de cada número/letra
+# La suma es 10
+
 print("Suma numeros texto string")
 print("Introduzca un texto numérico")
 textoNumeros = input()

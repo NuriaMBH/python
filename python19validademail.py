@@ -1,3 +1,17 @@
+# Vamos a realizar un programa para validar un Email con Python
+# El usuario introducirá un email y le indicaremos si está mal y la razón.
+
+# NO QUIERO BUCLES, TODO CON METODOS
+
+# Que el email contenga @
+# Que el email tenga un punto
+# @ ni al principio ni al final
+# Punto ni al principio ni al final
+# Que el email solamente tenga una @
+# Que exista un punto después de la @
+# El dominio debe ser de 2 a 3 caracteres
+# SOLUCION
+
 print("Validacion Email")
 print("Introduzca un email")
 email = input()
